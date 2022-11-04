@@ -1,0 +1,81 @@
+.genero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin: auto;
+    width: 1200px;
+}
+
+.largura {
+    height: 58px;
+    width: 400px;
+}
+
+
+.cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.nomes {
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+
+.editar {
+    width: 125px;
+    height: 35px;
+    background: #F6511D;
+    border: 2px solid #F6511D;
+    border-radius: 20px;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    line-height: 22px;
+
+}
+
+.excluir {
+    width: 125px;
+    height: 35px;
+    background: #41B8D2;
+    ;
+    border: 2px solid #41B8D2;
+    ;
+    border-radius: 20px;
+    font-family: 'Quicksand';
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+.cadastrar {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.nomes p {width: 300px;}

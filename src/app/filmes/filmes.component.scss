@@ -1,0 +1,100 @@
+.filme {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.inpults {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.largura {
+    width: 400px;
+}
+
+.cadastro {
+
+    margin-top: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.botao {
+    width: 180px;
+    height: 45px;
+    background: #F6511D;
+    color: white;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.inpult {
+    height: 58px;
+    width: 400px;
+
+}
+
+.cadastrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.nomes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.nomes p{ width: 300px;}
+ 
+
+.editar {
+    width: 125px;
+    height: 35px;
+    background: #F6511D;
+    border: 2px solid #F6511D;
+    border-radius: 20px;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    line-height: 22px;
+
+}
+
+.excluir {
+    width: 125px;
+    height: 35px;
+    background: #41B8D2;
+    ;
+    border: 2px solid #41B8D2;
+    ;
+    border-radius: 20px;
+    font-family: 'Quicksand';
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+ 
