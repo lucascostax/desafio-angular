@@ -16,12 +16,17 @@
 
 
 .botao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #F6511D;
+    width: 180px;
+    height: 45px;
+    border-color: #F6511D;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #F6511D inset, 0 0 0 0 #F6511D;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
     color: white;
-    margin-top: 20px;
+    border-radius: 4px;
+    flex: none;
+    margin-top: 30px;
 }
 
 main {
@@ -44,36 +49,52 @@ main {
     margin-top: 30px;
 }
 
-
 .editar {
     width: 125px;
     height: 35px;
-    background: #F6511D;
-    border: 2px solid #F6511D;
     border-radius: 20px;
     font-family: 'Quicksand';
     font-weight: 700;
+    border: 2px solid #F6511D;
     font-size: 18px;
-    color: white;
     line-height: 22px;
-
+    border-color: #F6511D;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #F6511D inset, 0 0 0 0 #F6511D;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    color: white;
+    border-radius: 4px;
+    flex: none;
+    border-radius: 20px;
 }
 
 .excluir {
     width: 125px;
     height: 35px;
-    background: #41B8D2;
-    ;
     border: 2px solid #41B8D2;
-    ;
     border-radius: 20px;
     font-family: 'Quicksand';
-    color: black;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
+    color: #fff;
+    box-shadow: 0 0 40px 40px  #41B8D2 inset, 0 0 0 0 #41B8D2;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    color: white;
+    border-radius: 4px;
+    flex: none;
+    border-radius: 20px;
+
 }
 
+
+.editar:hover{box-shadow: 0 0 10px 0 #F6511D inset, 0 0 10px 4px #F6511D; color: #000000;  }
+
+.excluir:hover{ box-shadow: 0 0 10px 0 #41B8D2 inset, 0 0 10px 4px #41B8D2; color: #000000;}
+
+.botao:hover{box-shadow: 0 0 10px 0 #F6511D inset, 0 0 10px 4px #F6511D; color: #000000;}
 
 .nomes p {
     width: 300px;

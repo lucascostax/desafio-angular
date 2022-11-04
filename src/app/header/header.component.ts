@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
       this.texto = 'Conheça nossa Coletânea'
     }
     else if (this.router.url === '/usuario') {
-      this.texto = 'Faça o Cadastro de usuários e  edite, caso necessário'
+      this.texto = 'Faça o Cadastro de usuários e  edite, caso necessário Pronto para cadastrar? '
     }
     else if (this.router.url === '/filmes') {
       this.texto = 'Cadastre os filmes de sua preferência '
