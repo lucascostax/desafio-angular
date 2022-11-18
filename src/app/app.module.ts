@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import {MatSelectModule} from '@angular/material/select';
 import { AppComponent } from './app.component';
 import { MatCardModule } from '@angular/material/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -11,9 +12,10 @@ import { HomeComponent } from './home/home.component';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { MatButtonModule } from '@angular/material/button';
 import { FilmesComponent } from './filmes/filmes.component';
-import { MatSelectModule } from '@angular/material/select';
+ import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { GeneroComponent } from './genero/genero.component';
-
+ 
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { GeneroComponent } from './genero/genero.component';
     BrowserAnimationsModule,
     MatInputModule,
     MatButtonModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     MatSelectModule
   ],
   providers: [],

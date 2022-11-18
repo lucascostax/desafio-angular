@@ -3,73 +3,57 @@
 <main>
 
     <mat-card-title class="cadastro">Cadastro</mat-card-title>
+    <form [formGroup]="form"   >
 
-    <div class="inpults">
+        <div class="inpults">
 
-        <table class="input" cellspacing="0">
-            <tr>
-                <td>
-                    <mat-form-field class="inpult" appearance="fill">
-                        <mat-label class="nome">Nome</mat-label>
-                        <input matInput>
-                    </mat-form-field>
-                </td>
-        </table>
+            <table class="input" cellspacing="0">
+                <tr>
+                    <td>
+                        <mat-form-field class="inpult" appearance="fill">
+                            <mat-label class="nome">Nome</mat-label>
+                            <input matInput formControlName="nome">
+                        </mat-form-field>
+                    </td>
+            </table>
 
-        <table class="input" cellspacing="0">
-            <tr>
-                <td>
-                    <mat-form-field class="inpult" appearance="fill">
-                        <mat-label class="email">Email</mat-label>
-                        <input matInput>
-                    </mat-form-field>
-                </td>
-        </table>
+            <table class="input" cellspacing="0">
+                <tr>
+                    <td>
+                        <mat-form-field class="inpult" appearance="fill">
+                            <mat-label class="email">Email</mat-label>
+                            <input matInput formControlName="email">
+                        </mat-form-field>
+                    </td>
+            </table>
 
-        <table class="input" cellspacing="0">
-            <tr>
-                <td>
-                    <mat-form-field class="inpult" appearance="fill" >
-                        <mat-label class="telefone">Telefone
-                        </mat-label>
-                        <input matInput>
-                    </mat-form-field>
-                </td>
-        </table>
+            <table class="input" cellspacing="0">
+                <tr>
+                    <td>
+                        <mat-form-field class="inpult" appearance="fill" >
+                            <mat-label class="telefone">Telefone
+                            </mat-label>
+                            <input matInput formControlname="telefone" name="telefone">
+                        </mat-form-field>
+                    </td>
+            </table>
 
 
-    </div>
+        </div>
 
-    <button mat-raised-button class="botao">Cadastrar</button>
+        <button mat-raised-button class="botao" (click)="salvarDadosUsuario()" *ngIf="!verificarEditar">Cadastrar</button>
+        <button mat-raised-button class="botao" (click)="EditarUsuario()" *ngIf="verificarEditar">Editar</button>
 
+    </form>
     <div class="cadastro">
 
-        <div class="nomes">
-            <p>Paulo André</p>
-            <p>paulo@gmail.com</p>
-            <p>3349 6788</p>
-            <button mat-button class="editar">Editar</button>
-            <button mat-button class="excluir">Excluir</button>
+        <div class="nomes" *ngFor="let item of usuarios; index as i;">
+            <p>{{item.nome}}</p>
+            <p>{{item.email}}</p>
+            <p>{{item.telefone}}</p>
+            <button mat-button class="editar" (click)="Editarusuario2(item)">Editar</button>
+            <button mat-button class="excluir"(click)="deleteDadosUsuario(item.id)">Excluir</button>
         </div>
-
-        <div class="nomes">
-            <p>Marcos Lucio</p>
-            <p>marcos@gmail.com</p>
-            <p>3349 6788</p>
-            <button mat-button class="editar">Editar</button>
-            <button mat-button class="excluir">Excluir</button>
-        </div>
-
-        <div class="nomes">
-            <p>Laura Port</p>
-            <p>laura@gmail.com</p>
-            <p>3349 6788</p>
-            <button mat-button class="editar">Editar</button>
-            <button mat-button class="excluir">Excluir</button>
-        </div>
-
-
-
     </div>
 </main>
 <app-footer></app-footer>

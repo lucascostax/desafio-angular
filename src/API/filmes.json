@@ -1,0 +1,33 @@
+{
+  "usuarios": [
+    {
+      "id": 0,
+      "nome": "lucas",
+      "email": "lucas@brq",
+      "telefone": 12991498808
+    },
+    {
+      "id": 1,
+      "nome": "henrique",
+      "email": "henrique@brq",
+      "telefone": 12914909878
+    }
+  ],
+  "filmes": [
+    {
+      "id": 1,
+      "nome": "Os outros",
+      "generoId": "1"
+    }
+  ],
+  "generos": [
+    {
+      "id": 1,
+      "nome": "Aventura"
+    },
+    {
+      "id": 2,
+      "nome": "dcddf"
+    }
+  ]
+}
